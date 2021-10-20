@@ -7,7 +7,7 @@
 
     $shareLink.on('keyup paste', function() {
       var link = $shareLink.val(),
-        l = link.replace(/drive.google.com\/file\/d\/(.+)\/(.+)/, "www.googleapis.com\/drive\/v3/files\/$1?alt=media&key=apikey");
+        l = link.replace(/drive.google.com\/file\/d\/(.+)\/(.+)/, "www.googleapis.com\/drive\/v3\/files\/$1?alt=media&key=ABCDEFGHIJK");
       if(l !== link) {
         $downloadLink.val(l);
         $copyButton.removeAttr('disabled');
